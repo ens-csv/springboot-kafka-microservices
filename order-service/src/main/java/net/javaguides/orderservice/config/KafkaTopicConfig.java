@@ -13,6 +13,7 @@ public class KafkaTopicConfig {
     private String topicName;
 
     // spring bean for kafka topic
+    @SuppressWarnings("null")
     @Bean
     public NewTopic topic(){
         return TopicBuilder.name(topicName)
